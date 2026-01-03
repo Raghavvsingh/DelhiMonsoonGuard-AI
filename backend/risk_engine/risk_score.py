@@ -47,10 +47,15 @@ def forecast_window(score):
 # CORE ENGINE
 # ---------------------------
 def compute_risk():
-    rainfall = pd.read_csv(os.path.join(DATA_DIR, "rainfall.csv"))
-    elevation = pd.read_csv(os.path.join(DATA_DIR, "elevation.csv"))
-    drainage = pd.read_csv(os.path.join(DATA_DIR, "drainage.csv"))
-    incidents = pd.read_csv(os.path.join(DATA_DIR, "incidents.csv"))
+    rainfall = pd.read_csv("data/rainfall.csv")
+    elevation = pd.read_csv("data/elevation.csv")
+    drainage = pd.read_csv("data/drainage.csv")
+    incidents = pd.read_csv("data/incidents.csv")
+
+    # Drop metadata columns to avoid merge conflicts
+    for df in [rainfall, elevation, drainage, incidents]:
+        if "data_source" in df.columns:
+            df.drop(columns=["data_source"], inplace=True)
 
     df = rainfall.merge(elevation, on="ward_id") \
                  .merge(drainage, on="ward_id") \
