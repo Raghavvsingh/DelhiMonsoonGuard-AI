@@ -1,9 +1,11 @@
+import { useState } from "react";
 import { getRiskColor } from '../utils/riskUtils';
 const CitizenDashboard = ({ wards, selectedWard }) => {
   // Safety guard — selectedWard is mandatory
   if (!selectedWard) return null;
 
-  const wardId = selectedWard.properties?.id;
+  const wardId = selectedWard?.geo?.properties?.id;
+
 
   const wardData = wards?.find(
     (w) => w.ward_id === wardId
@@ -17,6 +19,7 @@ const CitizenDashboard = ({ wards, selectedWard }) => {
   // High | Medium | Low
 
   const riskLevel = backendLevel;
+  const [forecastWindowUI, setForecastWindowUI] = useState(72);
 
 
   const getEmergencyContacts = () => [
@@ -74,6 +77,28 @@ const CitizenDashboard = ({ wards, selectedWard }) => {
   const riskColor = getRiskColor(riskLevel);
 
   /* ---------------- UI ---------------- */
+  const calculatePreparednessScore = (risk) => {
+    let score = 100;
+
+    if (risk === "High") score -= 40;
+    if (risk === "Medium") score -= 20;
+
+    // Proxy penalties (simulated)
+    score -= 15; // population exposure
+    score -= 10; // emergency access assumptions
+
+    return Math.max(score, 30);
+  };
+
+  const preparednessScore = calculatePreparednessScore(riskLevel);
+
+  const getPreparednessMeta = (score) => {
+    if (score >= 70) return { color: "text-green-400", label: "Prepared" };
+    if (score >= 40) return { color: "text-yellow-400", label: "Needs Attention" };
+    return { color: "text-red-400", label: "Low Preparedness" };
+  };
+
+  const preparednessMeta = getPreparednessMeta(preparednessScore);
 
   return (
    <div className="absolute top-20 right-6 z-10 w-96 max-h-[80vh] bg-gray-900 border border-gray-700 rounded-lg shadow-2xl">
@@ -96,12 +121,27 @@ const CitizenDashboard = ({ wards, selectedWard }) => {
 
 
         {/* FORECAST */}
-        <div className="text-sm text-gray-300">
-          Expected impact window:{" "}
-          <span className="font-semibold">
-            {forecastWindow}
-          </span>
+        {/* FORECAST WINDOW (SIMULATED) */}
+        <div className="space-y-2">
+          <p className="text-sm text-gray-300">
+            Expected impact window
+          </p>
+
+          <input
+            type="range"
+            min="24"
+            max="72"
+            step="24"
+            value={forecastWindowUI}
+            onChange={(e) => setForecastWindowUI(Number(e.target.value))}
+            className="w-full"
+          />
+
+          <p className="text-xs text-gray-400">
+            {forecastWindowUI} hours (simulated)
+          </p>
         </div>
+
 
         {/* DO */}
         <div>
@@ -158,6 +198,27 @@ const CitizenDashboard = ({ wards, selectedWard }) => {
             ))}
           </div>
         </div>
+      {/* PREPAREDNESS SCORE */}
+      <div className="border-t border-gray-700 pt-4">
+        <h3 className="text-white font-semibold mb-2">
+          Preparedness Score
+        </h3>
+
+        <div className="bg-gray-800 rounded-lg p-4 text-center">
+          <p className={`text-2xl font-bold ${preparednessMeta.color}`}>
+            {preparednessScore} / 100
+          </p>
+
+          <p className={`text-sm font-semibold ${preparednessMeta.color}`}>
+            {preparednessMeta.label}
+          </p>
+
+          <p className="text-xs text-gray-400 mt-2">
+            Proxy indicator based on risk level, population exposure,
+            and emergency access
+          </p>
+        </div>
+      </div>
 
       </div>
     </div>
