@@ -28,9 +28,13 @@ const AuthorityDashboard = ({ wards, selectedWard }) => {
   );
 
   // Selected ward backend object
-  const selectedWardData = selectedWard
-    ? wards.find(w => w.ward_id === selectedWard.properties.id)
-    : null;
+  const selectedWardId = selectedWard?.geo?.properties?.id;
+
+
+const selectedWardData = selectedWardId
+  ? wards.find(w => w.ward_id === selectedWardId)
+  : null;
+
 
   return (
     <div className="absolute top-20 right-6 z-10 w-96 bg-gray-900 border border-gray-700 rounded-lg shadow-2xl p-6">

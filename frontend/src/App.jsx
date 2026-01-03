@@ -13,7 +13,7 @@ function App() {
   // ✅ NEW: backend data state
   const [wards, setWards] = useState([]);
   const [loading, setLoading] = useState(true);
-
+ 
   // ✅ NEW: fetch backend data once
   useEffect(() => {
     fetchRiskData()

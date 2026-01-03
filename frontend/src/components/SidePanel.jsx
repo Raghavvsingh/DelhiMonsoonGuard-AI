@@ -14,12 +14,13 @@ const SidePanel = ({ wards, selectedWard, mode }) => {
 
   // GeoJSON (always exists)
   const {
-    id,
-    name,
-    riskLevel,
-    waterLevel,
-    population
-  } = selectedWard.properties;
+  id,
+  name,
+  riskLevel,
+  waterLevel,
+  population
+} = selectedWard.geo.properties;
+
 
   // Backend ward (may or may not exist)
   const backendWard = wards?.find((w) => w.ward_id === id);

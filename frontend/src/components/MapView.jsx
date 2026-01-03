@@ -1,9 +1,20 @@
-import { MapContainer, TileLayer, GeoJSON, CircleMarker } from "react-leaflet";
+import { MapContainer, TileLayer, GeoJSON, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
+import L from "leaflet";
 
 import { delhiBoundary } from "../data/delhiBoundary";
 import { mockWards } from "../data/mockWards";
-import { getRiskColor } from "../utils/riskUtils";
+
+// 🔴🟡🟢 Marker icons (Vite-safe imports)
+import redPin from "../assets/markers/marker-red.png";
+import yellowPin from "../assets/markers/marker-yellow.png";
+import greenPin from "../assets/markers/marker-green.png";
+const pinIcons = {
+  red: redPin,
+  yellow: yellowPin,
+  green: greenPin,
+};
+
 
 const MapView = ({ wards, onWardClick, selectedWard }) => {
   // Delhi bounding box
@@ -16,6 +27,23 @@ const MapView = ({ wards, onWardClick, selectedWard }) => {
   const riskByWardId = Object.fromEntries(
     (wards || []).map((w) => [w.ward_id, w])
   );
+  const createPinIcon = (color, isSelected = false) =>
+    new L.Icon({
+      iconUrl: pinIcons[color],
+      iconRetinaUrl: pinIcons[color],
+      shadowUrl: null, // disable Leaflet default shadow
+      iconSize: isSelected ? [36, 54] : [30, 45],
+      iconAnchor: isSelected ? [18, 54] : [15, 45],
+      popupAnchor: [0, -40],
+    });
+
+
+
+  const getPinColor = (risk) => {
+    if (risk === "High") return "red";
+    if (risk === "Medium") return "yellow";
+    return "green";
+  };
 
   return (
     <div className="absolute inset-0 z-0">
@@ -51,28 +79,32 @@ const MapView = ({ wards, onWardClick, selectedWard }) => {
         {mockWards.features.map((feature) => {
           const backendWard = riskByWardId[feature.properties.id];
           const riskLevel = backendWard?.risk?.level ?? "Low";
-
+          const isSelected =
+                selectedWard?.geo?.properties?.id === feature.properties.id;
           return (
-            <CircleMarker
+            <Marker
               key={feature.properties.id}
-              center={[
+              position={[
                 feature.geometry.coordinates[0][0][1], // lat
                 feature.geometry.coordinates[0][0][0], // lng
               ]}
-              radius={14} // 👈 bigger, visible
-              pathOptions={{
-                fillColor: getRiskColor(riskLevel),
-                color: "#ffffff",
-                weight:
-                  selectedWard?.properties?.id === feature.properties.id
-                    ? 3
-                    : 1,
-                fillOpacity: 0.85,
-              }}
+              icon={createPinIcon(getPinColor(riskLevel), isSelected)}
               eventHandlers={{
-                click: () => onWardClick(feature),
+                click: () => {
+                  const backendWard = riskByWardId[feature.properties.id];
+                  onWardClick({
+                    geo: feature,
+                    data: backendWard
+                  });
+                }
               }}
-            />
+            >
+              <Popup>
+                <strong>Ward:</strong> {feature.properties.id}<br />
+                <strong>Risk:</strong> {riskLevel}
+              </Popup>
+            </Marker>
+
           );
         })}
       </MapContainer>
