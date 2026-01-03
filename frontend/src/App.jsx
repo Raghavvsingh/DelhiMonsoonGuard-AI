@@ -1,13 +1,35 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import MapView from './components/MapView';
 import SidePanel from './components/SidePanel';
 import AuthorityDashboard from './components/AuthorityDashboard';
 import CitizenDashboard from './components/CitizenDashboard';
 import RiskLegend from './components/RiskLegend';
+import { fetchRiskData } from './services/riskServices' // ✅ NEW
 
 function App() {
   const [mode, setMode] = useState('authority');
   const [selectedWard, setSelectedWard] = useState(null);
+
+  // ✅ NEW: backend data state
+  const [wards, setWards] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  // ✅ NEW: fetch backend data once
+  useEffect(() => {
+    fetchRiskData()
+      .then((data) => {
+        setWards(data.wards); // 🔑 ONLY wards go to UI
+      })
+      .finally(() => setLoading(false));
+  }, []);
+
+  if (loading) {
+    return (
+      <div className="h-screen w-screen flex items-center justify-center bg-slate-950 text-white">
+        Loading Delhi Monsoon Guard…
+      </div>
+    );
+  }
 
   return (
     <div className="relative h-screen w-screen overflow-hidden bg-slate-950">
@@ -15,6 +37,7 @@ function App() {
       {/* MAP BASE LAYER */}
       <div className="absolute inset-0 z-0">
         <MapView
+          wards={wards}                 // ✅ NEW
           selectedWard={selectedWard}
           onWardClick={setSelectedWard}
         />
@@ -54,13 +77,23 @@ function App() {
       </header>
 
       {/* LEFT SIDE PANEL */}
-      <SidePanel selectedWard={selectedWard} mode={mode} />
+      <SidePanel
+        wards={wards}                   // ✅ NEW
+        selectedWard={selectedWard}
+        mode={mode}
+      />
 
       {/* RIGHT DASHBOARD */}
       {mode === 'authority' ? (
-        <AuthorityDashboard selectedWard={selectedWard} />
+        <AuthorityDashboard
+          wards={wards}                 // ✅ NEW
+          selectedWard={selectedWard}
+        />
       ) : (
-        <CitizenDashboard selectedWard={selectedWard} />
+        <CitizenDashboard
+          wards={wards}                 // ✅ NEW
+          selectedWard={selectedWard}
+        />
       )}
 
       {/* LEGEND */}
