@@ -15,6 +15,12 @@ const pinIcons = {
   green: greenPin,
 };
 
+// RS ADDED THIS
+const normalizeWardId = (id) => {
+  if (!id) return null;
+  return String(id).replace(/^D0+/, "D");
+};
+
 
 const MapView = ({ wards, onWardClick, selectedWard }) => {
   // Delhi bounding box
@@ -27,6 +33,48 @@ const MapView = ({ wards, onWardClick, selectedWard }) => {
   const riskByWardId = Object.fromEntries(
     (wards || []).map((w) => [w.ward_id, w])
   );
+
+  //RS ADDED THIS
+  // GeoJSON lookup (only wards that have geometry)
+  const geoByWardId = Object.fromEntries(
+  mockWards.features.map((f) => [
+    normalizeWardId(f.properties.id),
+    f
+  ])
+);
+
+    // 🔥 Pick top 5 High + top 5 Medium risk wards (from backend)
+  const visibleWards = (() => {
+    if (!wards || wards.length === 0) return [];
+
+    // 1️⃣ Only wards that have geometry
+    const withGeometry = wards.filter(
+      w => geoByWardId[normalizeWardId(w.ward_id)]
+    );
+
+    // 2️⃣ Sort by risk score DESC
+    const sorted = [...withGeometry].sort(
+      (a, b) => b.risk.score - a.risk.score
+    );
+
+    // 3️⃣ Pick top 5 of each category
+    const topHigh = sorted
+      .filter(w => w.risk.level === "High")
+      .slice(0, 5);
+
+    const topMedium = sorted
+      .filter(w => w.risk.level === "Medium")
+      .slice(0, 5);
+
+    const topLow = sorted
+      .filter(w => w.risk.level === "Low")
+      .slice(0, 5);
+
+    return [...topHigh, ...topMedium, ...topLow];
+  })();
+
+
+
   const createPinIcon = (color, isSelected = false) =>
     new L.Icon({
       iconUrl: pinIcons[color],
@@ -76,7 +124,7 @@ const MapView = ({ wards, onWardClick, selectedWard }) => {
         />
 
         {/* 🔥 WARD MARKERS (BACKEND-DRIVEN) */}
-        {mockWards.features.map((feature) => {
+        {/* {mockWards.features.map((feature) => {
           const backendWard = riskByWardId[feature.properties.id];
           const riskLevel = backendWard?.risk?.level ?? "Low";
           const isSelected =
@@ -106,7 +154,50 @@ const MapView = ({ wards, onWardClick, selectedWard }) => {
             </Marker>
 
           );
+        })} */}
+        {/* 🔥 TOP 5 HIGH + TOP 5 MEDIUM RISK WARDS */}
+        {visibleWards.map((ward) => {
+          const normId = normalizeWardId(ward?.ward_id);
+          if (!normId || !geoByWardId[normId]) return null;
+
+          const feature = geoByWardId[normId];
+
+          const isSelected =
+            normalizeWardId(selectedWard?.geo?.properties?.id) === normId;
+
+          return (
+            <Marker
+              key={ward.ward_id}
+              position={[
+                feature.geometry.coordinates[0][0][1],
+                feature.geometry.coordinates[0][0][0],
+              ]}
+              icon={createPinIcon(getPinColor(ward.risk.level), isSelected)}
+              eventHandlers={{
+                click: () => {
+                  onWardClick({
+                    geo: {
+                      ...feature,
+                      properties: {
+                        ...feature.properties,
+                        id: ward.ward_id,   // 🔑 FORCE BACKEND ID
+                      },
+                    },
+                    data: ward,
+                  });
+                },
+              }}
+            >
+              <Popup>
+                <strong>Ward:</strong> {feature.properties.name}<br />
+                <strong>Risk:</strong> {ward.risk.level}<br />
+                <strong>Score:</strong> {ward.risk.score}
+              </Popup>
+            </Marker>
+          );
         })}
+
+
       </MapContainer>
     </div>
   );
