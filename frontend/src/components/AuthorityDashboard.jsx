@@ -5,13 +5,16 @@ const AuthorityDashboard = ({ wards, selectedWard }) => {
 
   // ✅ Backend-driven stats
   const totalWards = wards.length;
-  const criticalWards = wards.filter(
-    w => w.risk.level === "High"
-  ).length;
+  // const criticalWards = wards.filter(
+  //   w => w.risk.level === "High"
+  // ).length;
 
-  const highRiskWards = wards.filter(
-    w => w.risk.level === "Medium"
-  ).length;
+  // const highRiskWards = wards.filter(
+  //   w => w.risk.level === "Medium"
+  // ).length;
+  const activeHotspots = wards.filter(w => w.risk.level === "High").length;
+  const potentialHotspots = wards.filter(w => w.risk.level === "Medium").length;
+
 
   const totalAlerts = wards.filter(
     w => w.priority.action_required
@@ -41,6 +44,10 @@ const selectedWardData = selectedWardId
       <h2 className="text-xl font-bold text-white mb-4">
         Authority Dashboard
       </h2>
+      <p className="text-xs text-gray-400 mb-4 italic">
+        Forecasts are informed by recent rainfall trends and historical monsoon data.
+      </p>
+
 
       {/* STATS */}
       <div className="grid grid-cols-2 gap-4 mb-6">
@@ -55,17 +62,20 @@ const selectedWardData = selectedWardId
           color="text-red-400"
         />
         <StatCard
-          title="Critical Wards"
-          value={criticalWards}
+          title="Active Water-Logging Hotspots"
+          value={activeHotspots}
           color="text-red-500"
           subtitle="Immediate attention"
         />
+
         <StatCard
-          title="High Risk Wards"
-          value={highRiskWards}
-          color="text-orange-500"
+          title="Potential Hotspots"
+          value={potentialHotspots}
+          color="text-yellow-400"
           subtitle="Monitor closely"
         />
+
+
       </div>
 
       {/* SELECTED WARD ACTIONS */}
@@ -87,8 +97,11 @@ const selectedWardData = selectedWardId
             )}
 
             <button className="w-full bg-yellow-600 hover:bg-yellow-700 text-white py-2 px-4 rounded text-sm transition-colors">
-              Send Alert to Residents
+              {selectedWardData.risk.level === "High"
+                ? "Send Emergency Alert"
+                : "Send Advisory Notice"}
             </button>
+
 
             <button className="w-full bg-gray-700 hover:bg-gray-600 text-white py-2 px-4 rounded text-sm transition-colors">
               View Detailed Report
