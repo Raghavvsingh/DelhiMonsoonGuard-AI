@@ -5,6 +5,19 @@ const CitizenDashboard = ({ wards, selectedWard }) => {
   if (!selectedWard) return null;
 
   const wardId = selectedWard?.geo?.properties?.id;
+  const explainRiskInOneLine = (ward) => {
+    if (!ward?.raw_factors) return null;
+
+    const { rainfall_mm, drainage_weakness, elevation_risk } = ward.raw_factors;
+
+    if (rainfall_mm > 80 && drainage_weakness > 0.6)
+      return "Heavy rainfall combined with weak drainage";
+
+    if (elevation_risk > 0.8)
+      return "Low-lying area prone to water accumulation";
+
+    return "Stable conditions with adequate drainage";
+  };
 
 
   const wardData = wards?.find(
@@ -19,7 +32,6 @@ const CitizenDashboard = ({ wards, selectedWard }) => {
   // High | Medium | Low
 
   const riskLevel = backendLevel;
-  const [forecastWindowUI, setForecastWindowUI] = useState(72);
 
 
   const getEmergencyContacts = () => [
@@ -101,7 +113,7 @@ const CitizenDashboard = ({ wards, selectedWard }) => {
   const preparednessMeta = getPreparednessMeta(preparednessScore);
 
   return (
-   <div className="absolute top-20 right-6 z-10 w-96 max-h-[80vh] bg-gray-900 border border-gray-700 rounded-lg shadow-2xl">
+   <div className="absolute top-20 right-6 z-10 w-96 h-[80vh] bg-gray-900 border border-gray-700 rounded-lg shadow-2xl flex flex-col">
 
 
       
@@ -110,14 +122,31 @@ const CitizenDashboard = ({ wards, selectedWard }) => {
         className="p-4 text-white font-bold text-center"
         style={{ backgroundColor: riskColor }}
       >
-        {riskLevel === "High" && "⚠️ HIGH FLOOD RISK"}
-        {riskLevel === "Medium" && "⚠️ MEDIUM FLOOD RISK"}
-        {riskLevel === "Low" && "✓ LOW RISK — STAY ALERT"}
+        {riskLevel === "High" && "🔴 ACTIVE WATER-LOGGING HOTSPOT"}
+        {riskLevel === "Medium" && "🟡 POTENTIAL WATER-LOGGING HOTSPOT"}
+        {riskLevel === "Low" && "🟢 NORMAL MONITORING ZONE"}
+
+
 
       </div>
+      {/* WHY THIS IS A HOTSPOT */}
+      {wardData?.raw_factors && (
+        <div className="px-4 py-2 bg-gray-800 text-gray-300 text-xs text-center italic">
+          {riskLevel === "High" &&
+            `${explainRiskInOneLine(wardData)} makes this an active water-logging hotspot.`}
+
+          {riskLevel === "Medium" &&
+            `${explainRiskInOneLine(wardData)} indicates a potential water-logging hotspot.`}
+
+          {riskLevel === "Low" &&
+            "Stable conditions with adequate drainage. No hotspot activity detected."}
+        </div>
+      )}
+
+
 
       {/* CONTENT */}
-      <div className="p-6 space-y-6 overflow-y-auto max-h-[calc(80vh-64px)]">
+      <div className="p-6 space-y-6 overflow-y-auto flex-1 pb-24">
 
 
         {/* FORECAST */}
@@ -127,19 +156,33 @@ const CitizenDashboard = ({ wards, selectedWard }) => {
             Expected impact window
           </p>
 
-          <input
-            type="range"
-            min="24"
-            max="72"
-            step="24"
-            value={forecastWindowUI}
-            onChange={(e) => setForecastWindowUI(Number(e.target.value))}
-            className="w-full"
-          />
+          <div className="mt-2">
+  <div className="w-full h-2 rounded bg-gray-700 overflow-hidden">
+    <div
+      className={
+        riskLevel === "High"
+          ? "h-full bg-red-500 w-full"
+          : riskLevel === "Medium"
+          ? "h-full bg-yellow-400 w-2/3"
+          : "h-full bg-green-500 w-1/3"
+      }
+    />
+    <p className="text-[11px] text-gray-500 italic mt-2">
+      Prediction based on recent rainfall trends and historical monsoon patterns.
+    </p>
 
-          <p className="text-xs text-gray-400">
-            {forecastWindowUI} hours (simulated)
-          </p>
+  </div>
+
+  <p className="text-xs text-gray-400 mt-1">
+    {riskLevel === "High" &&
+      "High impact expected within 72 hours (simulated)"}
+    {riskLevel === "Medium" &&
+      "Moderate impact possible within 48–72 hours (simulated)"}
+    {riskLevel === "Low" &&
+      "No significant impact expected in the next 72 hours"}
+  </p>
+</div>
+
         </div>
 
 

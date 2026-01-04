@@ -1,0 +1,1982 @@
+{
+  "geo_to_backend": {
+    "80": {
+      "backend_id": "D074",
+      "backend_name": "CHANDNI CHOWK",
+      "geo_name": "CHANDNI CHOWK"
+    },
+    "108": {
+      "backend_id": "D102",
+      "backend_name": "KHYALA",
+      "geo_name": "KHYALA"
+    },
+    "11": {
+      "backend_id": "D013",
+      "backend_name": "MUKHERJEE NAGAR",
+      "geo_name": "MUKHERJEE NAGAR"
+    },
+    "117": {
+      "backend_id": "D106",
+      "backend_name": "JANAK PURI WEST",
+      "geo_name": "JANAK PURI WEST"
+    },
+    "118": {
+      "backend_id": "D104",
+      "backend_name": "JANAK PURI SOUTH",
+      "geo_name": "JANAK PURI SOUTH"
+    },
+    "241": {
+      "backend_id": "D219",
+      "backend_name": "DILSHAD GARDEN",
+      "geo_name": "DILSHAD GARDEN"
+    },
+    "243": {
+      "backend_id": "D220",
+      "backend_name": "NAND NAGRI",
+      "geo_name": "NAND NAGRI"
+    },
+    "246": {
+      "backend_id": "D221",
+      "backend_name": "ASHOK NAGAR",
+      "geo_name": "ASHOK NAGAR"
+    },
+    "247": {
+      "backend_id": "D080",
+      "backend_name": "RAM NAGAR",
+      "geo_name": "RAM NAGAR"
+    },
+    "248": {
+      "backend_id": "D224",
+      "backend_name": "WELCOME COLONY",
+      "geo_name": "WELCOME COLONY"
+    },
+    "249": {
+      "backend_id": "D227",
+      "backend_name": "CHAUHAN BANGER",
+      "geo_name": "CHAUHAN BANGER"
+    },
+    "252": {
+      "backend_id": "D228",
+      "backend_name": "MAUJPUR",
+      "geo_name": "MAUJPUR"
+    },
+    "255": {
+      "backend_id": "D231",
+      "backend_name": "GHONDA",
+      "geo_name": "GHONDA"
+    },
+    "256": {
+      "backend_id": "D232",
+      "backend_name": "YAMUNA VIHAR",
+      "geo_name": "YAMUNA VIHAR"
+    },
+    "257": {
+      "backend_id": "D233",
+      "backend_name": "SUBHASH MOHALLA",
+      "geo_name": "SUBHASH MOHALLA"
+    },
+    "258": {
+      "backend_id": "D236",
+      "backend_name": "KARDAM PURI",
+      "geo_name": "KARDAM PURI"
+    },
+    "263": {
+      "backend_id": "D238",
+      "backend_name": "SABOLI",
+      "geo_name": "SABOLI"
+    },
+    "264": {
+      "backend_id": "D237",
+      "backend_name": "HARSH VIHAR",
+      "geo_name": "HARSH VIHAR"
+    },
+    "268": {
+      "backend_id": "D243",
+      "backend_name": "MUSTAFABAD",
+      "geo_name": "MUSTAFABAD"
+    },
+    "272": {
+      "backend_id": "D249",
+      "backend_name": "SONIA VIHAR",
+      "geo_name": "SONIA VIHAR"
+    },
+    "160": {
+      "backend_id": "D146",
+      "backend_name": "AMAR COLONY",
+      "geo_name": "AMAR COLONY"
+    },
+    "161": {
+      "backend_id": "D149",
+      "backend_name": "MALVIYA NAGAR",
+      "geo_name": "MALVIYA NAGAR"
+    },
+    "165": {
+      "backend_id": "D153",
+      "backend_name": "VASANT VIHAR",
+      "geo_name": "VASANT VIHAR"
+    },
+    "166": {
+      "backend_id": "D151",
+      "backend_name": "MUNIRKA",
+      "geo_name": "MUNIRKA"
+    },
+    "181": {
+      "backend_id": "D167",
+      "backend_name": "KHANPUR",
+      "geo_name": "KHANPUR"
+    },
+    "183": {
+      "backend_id": "D165",
+      "backend_name": "MADANGIR",
+      "geo_name": "MADANGIR"
+    },
+    "184": {
+      "backend_id": "D166",
+      "backend_name": "PUSHP VIHAR",
+      "geo_name": "PUSHP VIHAR"
+    },
+    "189": {
+      "backend_id": "D172",
+      "backend_name": "CHIRAG DELHI",
+      "geo_name": "CHIRAG DELHI"
+    },
+    "195": {
+      "backend_id": "D176",
+      "backend_name": "GOVIND PURI",
+      "geo_name": "GOVIND PURI"
+    },
+    "196": {
+      "backend_id": "D175",
+      "backend_name": "KALKAJI",
+      "geo_name": "KALKAJI"
+    },
+    "197": {
+      "backend_id": "D178",
+      "backend_name": "TUGHLAKABAD",
+      "geo_name": "TUGHLAKABAD"
+    },
+    "200": {
+      "backend_id": "D177",
+      "backend_name": "HARKESH NAGAR",
+      "geo_name": "HARKESH NAGAR"
+    },
+    "201": {
+      "backend_id": "D184",
+      "backend_name": "JAITPUR",
+      "geo_name": "JAITPUR"
+    },
+    "204": {
+      "backend_id": "D181",
+      "backend_name": "MOLARBAND",
+      "geo_name": "MOLARBAND"
+    },
+    "86": {
+      "backend_id": "D079",
+      "backend_name": "BALLIMARAN",
+      "geo_name": "BALLIMARAN"
+    },
+    "87": {
+      "backend_id": "D080",
+      "backend_name": "RAM NAGAR",
+      "geo_name": "RAM NAGAR"
+    },
+    "89": {
+      "backend_id": "D082",
+      "backend_name": "PAHAR GANJ",
+      "geo_name": "PAHAR GANJ"
+    },
+    "146": {
+      "backend_id": "D138",
+      "backend_name": "SADH NAGAR",
+      "geo_name": "SADH NAGAR"
+    },
+    "151": {
+      "backend_id": "D140",
+      "backend_name": "INDER PURI",
+      "geo_name": "INDER PURI"
+    },
+    "152": {
+      "backend_id": "D139",
+      "backend_name": "NARAINA",
+      "geo_name": "NARAINA"
+    },
+    "173": {
+      "backend_id": "D161",
+      "backend_name": "DEOLI",
+      "geo_name": "DEOLI"
+    },
+    "174": {
+      "backend_id": "D159",
+      "backend_name": "CHHATARPUR",
+      "geo_name": "CHHATARPUR"
+    },
+    "175": {
+      "backend_id": "D157",
+      "backend_name": "AYA NAGAR",
+      "geo_name": "AYA NAGAR"
+    },
+    "176": {
+      "backend_id": "D158",
+      "backend_name": "BHATI",
+      "geo_name": "BHATI"
+    },
+    "208": {
+      "backend_id": "D187",
+      "backend_name": "SARITA VIHAR",
+      "geo_name": "SARITA VIHAR"
+    },
+    "232": {
+      "backend_id": "D208",
+      "backend_name": "ANARKALI",
+      "geo_name": "ANARKALI"
+    },
+    "234": {
+      "backend_id": "D212",
+      "backend_name": "GANDHI NAGAR",
+      "geo_name": "GANDHI NAGAR"
+    },
+    "235": {
+      "backend_id": "D214",
+      "backend_name": "AZAD NAGAR",
+      "geo_name": "AZAD NAGAR"
+    },
+    "237": {
+      "backend_id": "D215",
+      "backend_name": "SHAHDARA",
+      "geo_name": "SHAHDARA"
+    },
+    "238": {
+      "backend_id": "D216",
+      "backend_name": "JHILMIL",
+      "geo_name": "JHILMIL"
+    },
+    "240": {
+      "backend_id": "D217",
+      "backend_name": "DILSHAD COLONY",
+      "geo_name": "DILSHAD COLONY"
+    },
+    "103": {
+      "backend_id": "D092",
+      "backend_name": "PUNJABI BAGH",
+      "geo_name": "PUNJABI BAGH"
+    },
+    "122": {
+      "backend_id": "D108",
+      "backend_name": "HASTSAL",
+      "geo_name": "HASTSAL"
+    },
+    "71": {
+      "backend_id": "D067",
+      "backend_name": "SANGAM PARK",
+      "geo_name": "SANGAM PARK"
+    },
+    "72": {
+      "backend_id": "D068",
+      "backend_name": "MODEL TOWN",
+      "geo_name": "MODEL TOWN"
+    },
+    "69": {
+      "backend_id": "D069",
+      "backend_name": "KAMLA NAGAR",
+      "geo_name": "KAMLA NAGAR"
+    },
+    "75": {
+      "backend_id": "D071",
+      "backend_name": "KISHAN GANJ",
+      "geo_name": "KISHAN GANJ"
+    },
+    "79": {
+      "backend_id": "D075",
+      "backend_name": "JAMA MASJID",
+      "geo_name": "JAMA MASJID"
+    },
+    "114": {
+      "backend_id": "D101",
+      "backend_name": "TILAK NAGAR",
+      "geo_name": "TILAK NAGAR"
+    },
+    "125": {
+      "backend_id": "D113",
+      "backend_name": "MOHAN GARDEN",
+      "geo_name": "MOHAN GARDEN"
+    },
+    "126": {
+      "backend_id": "D114",
+      "backend_name": "NAWADA",
+      "geo_name": "NAWADA"
+    },
+    "127": {
+      "backend_id": "D115",
+      "backend_name": "UTTAM NAGAR",
+      "geo_name": "UTTAM NAGAR"
+    },
+    "129": {
+      "backend_id": "D117",
+      "backend_name": "DABRI",
+      "geo_name": "DABRI"
+    },
+    "136": {
+      "backend_id": "D122",
+      "backend_name": "MATIALA",
+      "geo_name": "MATIALA"
+    },
+    "209": {
+      "backend_id": "D191",
+      "backend_name": "MAYUR VIHAR PHASE-I",
+      "geo_name": "MAYUR VIHAR PHASE-I"
+    },
+    "212": {
+      "backend_id": "D190",
+      "backend_name": "NEW ASHOK NAGAR",
+      "geo_name": "NEW ASHOK NAGAR"
+    },
+    "215": {
+      "backend_id": "D193",
+      "backend_name": "KONDLI",
+      "geo_name": "KONDLI"
+    },
+    "216": {
+      "backend_id": "D194",
+      "backend_name": "GHAROLI",
+      "geo_name": "GHAROLI"
+    },
+    "217": {
+      "backend_id": "D198",
+      "backend_name": "VINOD NAGAR",
+      "geo_name": "VINOD NAGAR"
+    },
+    "68": {
+      "backend_id": "D065",
+      "backend_name": "ASHOK VIHAR",
+      "geo_name": "ASHOK VIHAR"
+    },
+    "64": {
+      "backend_id": "D062",
+      "backend_name": "SHAKUR PUR",
+      "geo_name": "SHAKUR PUR"
+    },
+    "63": {
+      "backend_id": "D061",
+      "backend_name": "KOHAT ENCLAVE",
+      "geo_name": "KOHAT ENCLAVE"
+    },
+    "61": {
+      "backend_id": "D063",
+      "backend_name": "TRI NAGAR",
+      "geo_name": "TRI NAGAR"
+    },
+    "60": {
+      "backend_id": "D058",
+      "backend_name": "SARASWATI VIHAR",
+      "geo_name": "SARASWATI VIHAR"
+    },
+    "59": {
+      "backend_id": "D060",
+      "backend_name": "RANI BAGH",
+      "geo_name": "RANI BAGH"
+    },
+    "41": {
+      "backend_id": "D048",
+      "backend_name": "GURU HARKISHAN NAGAR",
+      "geo_name": "GURU HARKISHAN NAGAR"
+    },
+    "27": {
+      "backend_id": "D027",
+      "backend_name": "BEGUMPUR",
+      "geo_name": "BEGUMPUR"
+    },
+    "25": {
+      "backend_id": "D026",
+      "backend_name": "POOTH KALAN",
+      "geo_name": "POOTH KALAN"
+    },
+    "24": {
+      "backend_id": "D024",
+      "backend_name": "VIJAY VIHAR",
+      "geo_name": "VIJAY VIHAR"
+    },
+    "230": {
+      "backend_id": "D210",
+      "backend_name": "GEETA COLONY",
+      "geo_name": "GEETA COLONY"
+    },
+    "228": {
+      "backend_id": "D204",
+      "backend_name": "PREET VIHAR",
+      "geo_name": "PREET VIHAR"
+    },
+    "225": {
+      "backend_id": "D206",
+      "backend_name": "ANAND VIHAR",
+      "geo_name": "ANAND VIHAR"
+    },
+    "223": {
+      "backend_id": "D202",
+      "backend_name": "SHAKARPUR",
+      "geo_name": "SHAKARPUR"
+    },
+    "222": {
+      "backend_id": "D203",
+      "backend_name": "LAXMI NAGAR",
+      "geo_name": "LAXMI NAGAR"
+    },
+    "22": {
+      "backend_id": "D023",
+      "backend_name": "RITHALA",
+      "geo_name": "RITHALA"
+    },
+    "218": {
+      "backend_id": "D199",
+      "backend_name": "MANDAWALI",
+      "geo_name": "MANDAWALI"
+    },
+    "100": {
+      "backend_id": "D089",
+      "backend_name": "KARAM PURA",
+      "geo_name": "KARAM PURA"
+    },
+    "147": {
+      "backend_id": "D137",
+      "backend_name": "MAHAVIR ENCLAVE",
+      "geo_name": "MAHAVIR ENCLAVE"
+    },
+    "131": {
+      "backend_id": "D118",
+      "backend_name": "SAGARPUR",
+      "geo_name": "SAGARPUR"
+    },
+    "95": {
+      "backend_id": "D086",
+      "backend_name": "EAST PATEL NAGAR",
+      "geo_name": "EAST PATEL NAGAR"
+    },
+    "94": {
+      "backend_id": "D085",
+      "backend_name": "WEST PATEL NAGAR",
+      "geo_name": "WEST PATEL NAGAR"
+    },
+    "92": {
+      "backend_id": "D084",
+      "backend_name": "DEV NAGAR",
+      "geo_name": "DEV NAGAR"
+    },
+    "91": {
+      "backend_id": "D083",
+      "backend_name": "KAROL BAGH",
+      "geo_name": "KAROL BAGH"
+    },
+    "3": {
+      "backend_id": "D004",
+      "backend_name": "ALIPUR",
+      "geo_name": "ALIPUR"
+    },
+    "2": {
+      "backend_id": "D002",
+      "backend_name": "BANKNER",
+      "geo_name": "BANKNER"
+    },
+    "8": {
+      "backend_id": "D010",
+      "backend_name": "JHARODA",
+      "geo_name": "JHARODA"
+    },
+    "28": {
+      "backend_id": "D030",
+      "backend_name": "BAWANA",
+      "geo_name": "BAWANA"
+    },
+    "19": {
+      "backend_id": "D017",
+      "backend_name": "BHALSWA",
+      "geo_name": "BHALSWA"
+    },
+    "17": {
+      "backend_id": "D020",
+      "backend_name": "SAMAYPUR BADLI",
+      "geo_name": "SAMAYPUR BADLI"
+    },
+    "144": {
+      "backend_id": "D133",
+      "backend_name": "MAHIPALPUR",
+      "geo_name": "MAHIPALPUR"
+    },
+    "143": {
+      "backend_id": "D132",
+      "backend_name": "KAPASHERA",
+      "geo_name": "KAPASHERA"
+    },
+    "141": {
+      "backend_id": "D131",
+      "backend_name": "BIJWASAN",
+      "geo_name": "BIJWASAN"
+    },
+    "102": {
+      "backend_id": "D094",
+      "backend_name": "RAGHUBIR NAGAR",
+      "geo_name": "RAGHUBIR NAGAR"
+    },
+    "105": {
+      "backend_id": "D096",
+      "backend_name": "RAJOURI GARDEN",
+      "geo_name": "RAJOURI GARDEN"
+    },
+    "111": {
+      "backend_id": "D099",
+      "backend_name": "HARI NAGAR",
+      "geo_name": "HARI NAGAR"
+    },
+    "112": {
+      "backend_id": "D098",
+      "backend_name": "SUBHASH NAGAR",
+      "geo_name": "SUBHASH NAGAR"
+    },
+    "148": {
+      "backend_id": "D136",
+      "backend_name": "MADHU VIHAR",
+      "geo_name": "MADHU VIHAR"
+    },
+    "23": {
+      "backend_id": "D025",
+      "backend_name": "BUDH VIHAR",
+      "geo_name": "BUDH VIHAR"
+    },
+    "34": {
+      "backend_id": "D040",
+      "backend_name": "NITHARI",
+      "geo_name": "NITHARI"
+    },
+    "254": {
+      "backend_id": "D229",
+      "backend_name": "BRAHAM PURI",
+      "geo_name": "BRAHAM PURI"
+    },
+    "139": {
+      "backend_id": "D128",
+      "backend_name": "DICHAON KALAN",
+      "geo_name": "DICHAON KALAN"
+    },
+    "99": {
+      "backend_id": "D090",
+      "backend_name": "MOTI NAGAR",
+      "geo_name": "MOTI NAGAR"
+    },
+    "155": {
+      "backend_id": "D144",
+      "backend_name": "LAJPAT NAGAR",
+      "geo_name": "LAJPAT NAGAR"
+    },
+    "145": {
+      "backend_id": "D135",
+      "backend_name": "PALAM",
+      "geo_name": "PALAM"
+    },
+    "104": {
+      "backend_id": "D093",
+      "backend_name": "MADIPUR",
+      "geo_name": "MADIPUR"
+    },
+    "164": {
+      "backend_id": "D148",
+      "backend_name": "HAUZ KHAS",
+      "geo_name": "HAUZ KHAS"
+    },
+    "158": {
+      "backend_id": "D147",
+      "backend_name": "KOTLA MUBARAKPUR",
+      "geo_name": "KOTLA MUBARAKPUR"
+    },
+    "130": {
+      "backend_id": "D119",
+      "backend_name": "MANGLAPURI",
+      "geo_name": "MANGLAPURI"
+    },
+    "1": {
+      "backend_id": "D001",
+      "backend_name": "NARELA",
+      "geo_name": "NARELA"
+    },
+    "7": {
+      "backend_id": "D006",
+      "backend_name": "BURARI",
+      "geo_name": "BURARI"
+    },
+    "224": {
+      "backend_id": "D200",
+      "backend_name": "PANDAV NAGAR",
+      "geo_name": "PANDAV NAGAR"
+    },
+    "253": {
+      "backend_id": "D230",
+      "backend_name": "BHAJANPURA",
+      "geo_name": "BHAJANPURA"
+    },
+    "267": {
+      "backend_id": "D244",
+      "backend_name": "NEHRU VIHAR",
+      "geo_name": "NEHRU VIHAR"
+    },
+    "170": {
+      "backend_id": "D155",
+      "backend_name": "MEHRAULI",
+      "geo_name": "MEHRAULI"
+    },
+    "179": {
+      "backend_id": "D162",
+      "backend_name": "TIGRI",
+      "geo_name": "TIGRI"
+    },
+    "205": {
+      "backend_id": "D189",
+      "backend_name": "ZAKIR NAGAR",
+      "geo_name": "ZAKIR NAGAR"
+    },
+    "138": {
+      "backend_id": "D127",
+      "backend_name": "NAJAFGARH",
+      "geo_name": "NAJAFGARH"
+    },
+    "121": {
+      "backend_id": "D110",
+      "backend_name": "KUNWAR SINGH NAGAR",
+      "geo_name": "KUNWAR SINGH NAGAR"
+    },
+    "124": {
+      "backend_id": "D109",
+      "backend_name": "VIKAS NAGAR",
+      "geo_name": "VIKAS NAGAR"
+    },
+    "123": {
+      "backend_id": "D107",
+      "backend_name": "VIKAS PURI",
+      "geo_name": "VIKAS PURI"
+    },
+    "153": {
+      "backend_id": "D142",
+      "backend_name": "DARYAGANJ",
+      "geo_name": "DARYAGANJ"
+    },
+    "32": {
+      "backend_id": "D036",
+      "backend_name": "NILOTHI",
+      "geo_name": "NILOTHI"
+    },
+    "33": {
+      "backend_id": "D038",
+      "backend_name": "PREM NAGAR",
+      "geo_name": "PREM NAGAR"
+    },
+    "73": {
+      "backend_id": "D070",
+      "backend_name": "SHASTRI NAGAR",
+      "geo_name": "SHASTRI NAGAR"
+    },
+    "107": {
+      "backend_id": "D095",
+      "backend_name": "VISHNU GARDEN",
+      "geo_name": "VISHNU GARDEN"
+    },
+    "142": {
+      "backend_id": "D134",
+      "backend_name": "RAJ NAGAR",
+      "geo_name": "RAJ NAGAR"
+    }
+  },
+  "backend_to_geo": {
+    "D074": {
+      "geo_no": "80",
+      "geo_name": "CHANDNI CHOWK",
+      "backend_name": "CHANDNI CHOWK"
+    },
+    "D102": {
+      "geo_no": "108",
+      "geo_name": "KHYALA",
+      "backend_name": "KHYALA"
+    },
+    "D013": {
+      "geo_no": "11",
+      "geo_name": "MUKHERJEE NAGAR",
+      "backend_name": "MUKHERJEE NAGAR"
+    },
+    "D106": {
+      "geo_no": "117",
+      "geo_name": "JANAK PURI WEST",
+      "backend_name": "JANAK PURI WEST"
+    },
+    "D104": {
+      "geo_no": "118",
+      "geo_name": "JANAK PURI SOUTH",
+      "backend_name": "JANAK PURI SOUTH"
+    },
+    "D219": {
+      "geo_no": "241",
+      "geo_name": "DILSHAD GARDEN",
+      "backend_name": "DILSHAD GARDEN"
+    },
+    "D220": {
+      "geo_no": "243",
+      "geo_name": "NAND NAGRI",
+      "backend_name": "NAND NAGRI"
+    },
+    "D221": {
+      "geo_no": "246",
+      "geo_name": "ASHOK NAGAR",
+      "backend_name": "ASHOK NAGAR"
+    },
+    "D080": {
+      "geo_no": "87",
+      "geo_name": "RAM NAGAR",
+      "backend_name": "RAM NAGAR"
+    },
+    "D224": {
+      "geo_no": "248",
+      "geo_name": "WELCOME COLONY",
+      "backend_name": "WELCOME COLONY"
+    },
+    "D227": {
+      "geo_no": "249",
+      "geo_name": "CHAUHAN BANGER",
+      "backend_name": "CHAUHAN BANGER"
+    },
+    "D228": {
+      "geo_no": "252",
+      "geo_name": "MAUJPUR",
+      "backend_name": "MAUJPUR"
+    },
+    "D231": {
+      "geo_no": "255",
+      "geo_name": "GHONDA",
+      "backend_name": "GHONDA"
+    },
+    "D232": {
+      "geo_no": "256",
+      "geo_name": "YAMUNA VIHAR",
+      "backend_name": "YAMUNA VIHAR"
+    },
+    "D233": {
+      "geo_no": "257",
+      "geo_name": "SUBHASH MOHALLA",
+      "backend_name": "SUBHASH MOHALLA"
+    },
+    "D236": {
+      "geo_no": "258",
+      "geo_name": "KARDAM PURI",
+      "backend_name": "KARDAM PURI"
+    },
+    "D238": {
+      "geo_no": "263",
+      "geo_name": "SABOLI",
+      "backend_name": "SABOLI"
+    },
+    "D237": {
+      "geo_no": "264",
+      "geo_name": "HARSH VIHAR",
+      "backend_name": "HARSH VIHAR"
+    },
+    "D243": {
+      "geo_no": "268",
+      "geo_name": "MUSTAFABAD",
+      "backend_name": "MUSTAFABAD"
+    },
+    "D249": {
+      "geo_no": "272",
+      "geo_name": "SONIA VIHAR",
+      "backend_name": "SONIA VIHAR"
+    },
+    "D146": {
+      "geo_no": "160",
+      "geo_name": "AMAR COLONY",
+      "backend_name": "AMAR COLONY"
+    },
+    "D149": {
+      "geo_no": "161",
+      "geo_name": "MALVIYA NAGAR",
+      "backend_name": "MALVIYA NAGAR"
+    },
+    "D153": {
+      "geo_no": "165",
+      "geo_name": "VASANT VIHAR",
+      "backend_name": "VASANT VIHAR"
+    },
+    "D151": {
+      "geo_no": "166",
+      "geo_name": "MUNIRKA",
+      "backend_name": "MUNIRKA"
+    },
+    "D167": {
+      "geo_no": "181",
+      "geo_name": "KHANPUR",
+      "backend_name": "KHANPUR"
+    },
+    "D165": {
+      "geo_no": "183",
+      "geo_name": "MADANGIR",
+      "backend_name": "MADANGIR"
+    },
+    "D166": {
+      "geo_no": "184",
+      "geo_name": "PUSHP VIHAR",
+      "backend_name": "PUSHP VIHAR"
+    },
+    "D172": {
+      "geo_no": "189",
+      "geo_name": "CHIRAG DELHI",
+      "backend_name": "CHIRAG DELHI"
+    },
+    "D176": {
+      "geo_no": "195",
+      "geo_name": "GOVIND PURI",
+      "backend_name": "GOVIND PURI"
+    },
+    "D175": {
+      "geo_no": "196",
+      "geo_name": "KALKAJI",
+      "backend_name": "KALKAJI"
+    },
+    "D178": {
+      "geo_no": "197",
+      "geo_name": "TUGHLAKABAD",
+      "backend_name": "TUGHLAKABAD"
+    },
+    "D177": {
+      "geo_no": "200",
+      "geo_name": "HARKESH NAGAR",
+      "backend_name": "HARKESH NAGAR"
+    },
+    "D184": {
+      "geo_no": "201",
+      "geo_name": "JAITPUR",
+      "backend_name": "JAITPUR"
+    },
+    "D181": {
+      "geo_no": "204",
+      "geo_name": "MOLARBAND",
+      "backend_name": "MOLARBAND"
+    },
+    "D079": {
+      "geo_no": "86",
+      "geo_name": "BALLIMARAN",
+      "backend_name": "BALLIMARAN"
+    },
+    "D082": {
+      "geo_no": "89",
+      "geo_name": "PAHAR GANJ",
+      "backend_name": "PAHAR GANJ"
+    },
+    "D138": {
+      "geo_no": "146",
+      "geo_name": "SADH NAGAR",
+      "backend_name": "SADH NAGAR"
+    },
+    "D140": {
+      "geo_no": "151",
+      "geo_name": "INDER PURI",
+      "backend_name": "INDER PURI"
+    },
+    "D139": {
+      "geo_no": "152",
+      "geo_name": "NARAINA",
+      "backend_name": "NARAINA"
+    },
+    "D161": {
+      "geo_no": "173",
+      "geo_name": "DEOLI",
+      "backend_name": "DEOLI"
+    },
+    "D159": {
+      "geo_no": "174",
+      "geo_name": "CHHATARPUR",
+      "backend_name": "CHHATARPUR"
+    },
+    "D157": {
+      "geo_no": "175",
+      "geo_name": "AYA NAGAR",
+      "backend_name": "AYA NAGAR"
+    },
+    "D158": {
+      "geo_no": "176",
+      "geo_name": "BHATI",
+      "backend_name": "BHATI"
+    },
+    "D187": {
+      "geo_no": "208",
+      "geo_name": "SARITA VIHAR",
+      "backend_name": "SARITA VIHAR"
+    },
+    "D208": {
+      "geo_no": "232",
+      "geo_name": "ANARKALI",
+      "backend_name": "ANARKALI"
+    },
+    "D212": {
+      "geo_no": "234",
+      "geo_name": "GANDHI NAGAR",
+      "backend_name": "GANDHI NAGAR"
+    },
+    "D214": {
+      "geo_no": "235",
+      "geo_name": "AZAD NAGAR",
+      "backend_name": "AZAD NAGAR"
+    },
+    "D215": {
+      "geo_no": "237",
+      "geo_name": "SHAHDARA",
+      "backend_name": "SHAHDARA"
+    },
+    "D216": {
+      "geo_no": "238",
+      "geo_name": "JHILMIL",
+      "backend_name": "JHILMIL"
+    },
+    "D217": {
+      "geo_no": "240",
+      "geo_name": "DILSHAD COLONY",
+      "backend_name": "DILSHAD COLONY"
+    },
+    "D092": {
+      "geo_no": "103",
+      "geo_name": "PUNJABI BAGH",
+      "backend_name": "PUNJABI BAGH"
+    },
+    "D108": {
+      "geo_no": "122",
+      "geo_name": "HASTSAL",
+      "backend_name": "HASTSAL"
+    },
+    "D067": {
+      "geo_no": "71",
+      "geo_name": "SANGAM PARK",
+      "backend_name": "SANGAM PARK"
+    },
+    "D068": {
+      "geo_no": "72",
+      "geo_name": "MODEL TOWN",
+      "backend_name": "MODEL TOWN"
+    },
+    "D069": {
+      "geo_no": "69",
+      "geo_name": "KAMLA NAGAR",
+      "backend_name": "KAMLA NAGAR"
+    },
+    "D071": {
+      "geo_no": "75",
+      "geo_name": "KISHAN GANJ",
+      "backend_name": "KISHAN GANJ"
+    },
+    "D075": {
+      "geo_no": "79",
+      "geo_name": "JAMA MASJID",
+      "backend_name": "JAMA MASJID"
+    },
+    "D101": {
+      "geo_no": "114",
+      "geo_name": "TILAK NAGAR",
+      "backend_name": "TILAK NAGAR"
+    },
+    "D113": {
+      "geo_no": "125",
+      "geo_name": "MOHAN GARDEN",
+      "backend_name": "MOHAN GARDEN"
+    },
+    "D114": {
+      "geo_no": "126",
+      "geo_name": "NAWADA",
+      "backend_name": "NAWADA"
+    },
+    "D115": {
+      "geo_no": "127",
+      "geo_name": "UTTAM NAGAR",
+      "backend_name": "UTTAM NAGAR"
+    },
+    "D117": {
+      "geo_no": "129",
+      "geo_name": "DABRI",
+      "backend_name": "DABRI"
+    },
+    "D122": {
+      "geo_no": "136",
+      "geo_name": "MATIALA",
+      "backend_name": "MATIALA"
+    },
+    "D191": {
+      "geo_no": "209",
+      "geo_name": "MAYUR VIHAR PHASE-I",
+      "backend_name": "MAYUR VIHAR PHASE-I"
+    },
+    "D190": {
+      "geo_no": "212",
+      "geo_name": "NEW ASHOK NAGAR",
+      "backend_name": "NEW ASHOK NAGAR"
+    },
+    "D193": {
+      "geo_no": "215",
+      "geo_name": "KONDLI",
+      "backend_name": "KONDLI"
+    },
+    "D194": {
+      "geo_no": "216",
+      "geo_name": "GHAROLI",
+      "backend_name": "GHAROLI"
+    },
+    "D198": {
+      "geo_no": "217",
+      "geo_name": "VINOD NAGAR",
+      "backend_name": "VINOD NAGAR"
+    },
+    "D065": {
+      "geo_no": "68",
+      "geo_name": "ASHOK VIHAR",
+      "backend_name": "ASHOK VIHAR"
+    },
+    "D062": {
+      "geo_no": "64",
+      "geo_name": "SHAKUR PUR",
+      "backend_name": "SHAKUR PUR"
+    },
+    "D061": {
+      "geo_no": "63",
+      "geo_name": "KOHAT ENCLAVE",
+      "backend_name": "KOHAT ENCLAVE"
+    },
+    "D063": {
+      "geo_no": "61",
+      "geo_name": "TRI NAGAR",
+      "backend_name": "TRI NAGAR"
+    },
+    "D058": {
+      "geo_no": "60",
+      "geo_name": "SARASWATI VIHAR",
+      "backend_name": "SARASWATI VIHAR"
+    },
+    "D060": {
+      "geo_no": "59",
+      "geo_name": "RANI BAGH",
+      "backend_name": "RANI BAGH"
+    },
+    "D048": {
+      "geo_no": "41",
+      "geo_name": "GURU HARKISHAN NAGAR",
+      "backend_name": "GURU HARKISHAN NAGAR"
+    },
+    "D027": {
+      "geo_no": "27",
+      "geo_name": "BEGUMPUR",
+      "backend_name": "BEGUMPUR"
+    },
+    "D026": {
+      "geo_no": "25",
+      "geo_name": "POOTH KALAN",
+      "backend_name": "POOTH KALAN"
+    },
+    "D024": {
+      "geo_no": "24",
+      "geo_name": "VIJAY VIHAR",
+      "backend_name": "VIJAY VIHAR"
+    },
+    "D210": {
+      "geo_no": "230",
+      "geo_name": "GEETA COLONY",
+      "backend_name": "GEETA COLONY"
+    },
+    "D204": {
+      "geo_no": "228",
+      "geo_name": "PREET VIHAR",
+      "backend_name": "PREET VIHAR"
+    },
+    "D206": {
+      "geo_no": "225",
+      "geo_name": "ANAND VIHAR",
+      "backend_name": "ANAND VIHAR"
+    },
+    "D202": {
+      "geo_no": "223",
+      "geo_name": "SHAKARPUR",
+      "backend_name": "SHAKARPUR"
+    },
+    "D203": {
+      "geo_no": "222",
+      "geo_name": "LAXMI NAGAR",
+      "backend_name": "LAXMI NAGAR"
+    },
+    "D023": {
+      "geo_no": "22",
+      "geo_name": "RITHALA",
+      "backend_name": "RITHALA"
+    },
+    "D199": {
+      "geo_no": "218",
+      "geo_name": "MANDAWALI",
+      "backend_name": "MANDAWALI"
+    },
+    "D089": {
+      "geo_no": "100",
+      "geo_name": "KARAM PURA",
+      "backend_name": "KARAM PURA"
+    },
+    "D137": {
+      "geo_no": "147",
+      "geo_name": "MAHAVIR ENCLAVE",
+      "backend_name": "MAHAVIR ENCLAVE"
+    },
+    "D118": {
+      "geo_no": "131",
+      "geo_name": "SAGARPUR",
+      "backend_name": "SAGARPUR"
+    },
+    "D086": {
+      "geo_no": "95",
+      "geo_name": "EAST PATEL NAGAR",
+      "backend_name": "EAST PATEL NAGAR"
+    },
+    "D085": {
+      "geo_no": "94",
+      "geo_name": "WEST PATEL NAGAR",
+      "backend_name": "WEST PATEL NAGAR"
+    },
+    "D084": {
+      "geo_no": "92",
+      "geo_name": "DEV NAGAR",
+      "backend_name": "DEV NAGAR"
+    },
+    "D083": {
+      "geo_no": "91",
+      "geo_name": "KAROL BAGH",
+      "backend_name": "KAROL BAGH"
+    },
+    "D004": {
+      "geo_no": "3",
+      "geo_name": "ALIPUR",
+      "backend_name": "ALIPUR"
+    },
+    "D002": {
+      "geo_no": "2",
+      "geo_name": "BANKNER",
+      "backend_name": "BANKNER"
+    },
+    "D010": {
+      "geo_no": "8",
+      "geo_name": "JHARODA",
+      "backend_name": "JHARODA"
+    },
+    "D030": {
+      "geo_no": "28",
+      "geo_name": "BAWANA",
+      "backend_name": "BAWANA"
+    },
+    "D017": {
+      "geo_no": "19",
+      "geo_name": "BHALSWA",
+      "backend_name": "BHALSWA"
+    },
+    "D020": {
+      "geo_no": "17",
+      "geo_name": "SAMAYPUR BADLI",
+      "backend_name": "SAMAYPUR BADLI"
+    },
+    "D133": {
+      "geo_no": "144",
+      "geo_name": "MAHIPALPUR",
+      "backend_name": "MAHIPALPUR"
+    },
+    "D132": {
+      "geo_no": "143",
+      "geo_name": "KAPASHERA",
+      "backend_name": "KAPASHERA"
+    },
+    "D131": {
+      "geo_no": "141",
+      "geo_name": "BIJWASAN",
+      "backend_name": "BIJWASAN"
+    },
+    "D094": {
+      "geo_no": "102",
+      "geo_name": "RAGHUBIR NAGAR",
+      "backend_name": "RAGHUBIR NAGAR"
+    },
+    "D096": {
+      "geo_no": "105",
+      "geo_name": "RAJOURI GARDEN",
+      "backend_name": "RAJOURI GARDEN"
+    },
+    "D099": {
+      "geo_no": "111",
+      "geo_name": "HARI NAGAR",
+      "backend_name": "HARI NAGAR"
+    },
+    "D098": {
+      "geo_no": "112",
+      "geo_name": "SUBHASH NAGAR",
+      "backend_name": "SUBHASH NAGAR"
+    },
+    "D136": {
+      "geo_no": "148",
+      "geo_name": "MADHU VIHAR",
+      "backend_name": "MADHU VIHAR"
+    },
+    "D025": {
+      "geo_no": "23",
+      "geo_name": "BUDH VIHAR",
+      "backend_name": "BUDH VIHAR"
+    },
+    "D040": {
+      "geo_no": "34",
+      "geo_name": "NITHARI",
+      "backend_name": "NITHARI"
+    },
+    "D229": {
+      "geo_no": "254",
+      "geo_name": "BRAHAM PURI",
+      "backend_name": "BRAHAM PURI"
+    },
+    "D128": {
+      "geo_no": "139",
+      "geo_name": "DICHAON KALAN",
+      "backend_name": "DICHAON KALAN"
+    },
+    "D090": {
+      "geo_no": "99",
+      "geo_name": "MOTI NAGAR",
+      "backend_name": "MOTI NAGAR"
+    },
+    "D144": {
+      "geo_no": "155",
+      "geo_name": "LAJPAT NAGAR",
+      "backend_name": "LAJPAT NAGAR"
+    },
+    "D135": {
+      "geo_no": "145",
+      "geo_name": "PALAM",
+      "backend_name": "PALAM"
+    },
+    "D093": {
+      "geo_no": "104",
+      "geo_name": "MADIPUR",
+      "backend_name": "MADIPUR"
+    },
+    "D148": {
+      "geo_no": "164",
+      "geo_name": "HAUZ KHAS",
+      "backend_name": "HAUZ KHAS"
+    },
+    "D147": {
+      "geo_no": "158",
+      "geo_name": "KOTLA MUBARAKPUR",
+      "backend_name": "KOTLA MUBARAKPUR"
+    },
+    "D119": {
+      "geo_no": "130",
+      "geo_name": "MANGLAPURI",
+      "backend_name": "MANGLAPURI"
+    },
+    "D001": {
+      "geo_no": "1",
+      "geo_name": "NARELA",
+      "backend_name": "NARELA"
+    },
+    "D006": {
+      "geo_no": "7",
+      "geo_name": "BURARI",
+      "backend_name": "BURARI"
+    },
+    "D200": {
+      "geo_no": "224",
+      "geo_name": "PANDAV NAGAR",
+      "backend_name": "PANDAV NAGAR"
+    },
+    "D230": {
+      "geo_no": "253",
+      "geo_name": "BHAJANPURA",
+      "backend_name": "BHAJANPURA"
+    },
+    "D244": {
+      "geo_no": "267",
+      "geo_name": "NEHRU VIHAR",
+      "backend_name": "NEHRU VIHAR"
+    },
+    "D155": {
+      "geo_no": "170",
+      "geo_name": "MEHRAULI",
+      "backend_name": "MEHRAULI"
+    },
+    "D162": {
+      "geo_no": "179",
+      "geo_name": "TIGRI",
+      "backend_name": "TIGRI"
+    },
+    "D189": {
+      "geo_no": "205",
+      "geo_name": "ZAKIR NAGAR",
+      "backend_name": "ZAKIR NAGAR"
+    },
+    "D127": {
+      "geo_no": "138",
+      "geo_name": "NAJAFGARH",
+      "backend_name": "NAJAFGARH"
+    },
+    "D110": {
+      "geo_no": "121",
+      "geo_name": "KUNWAR SINGH NAGAR",
+      "backend_name": "KUNWAR SINGH NAGAR"
+    },
+    "D109": {
+      "geo_no": "124",
+      "geo_name": "VIKAS NAGAR",
+      "backend_name": "VIKAS NAGAR"
+    },
+    "D107": {
+      "geo_no": "123",
+      "geo_name": "VIKAS PURI",
+      "backend_name": "VIKAS PURI"
+    },
+    "D142": {
+      "geo_no": "153",
+      "geo_name": "DARYAGANJ",
+      "backend_name": "DARYAGANJ"
+    },
+    "D036": {
+      "geo_no": "32",
+      "geo_name": "NILOTHI",
+      "backend_name": "NILOTHI"
+    },
+    "D038": {
+      "geo_no": "33",
+      "geo_name": "PREM NAGAR",
+      "backend_name": "PREM NAGAR"
+    },
+    "D070": {
+      "geo_no": "73",
+      "geo_name": "SHASTRI NAGAR",
+      "backend_name": "SHASTRI NAGAR"
+    },
+    "D095": {
+      "geo_no": "107",
+      "geo_name": "VISHNU GARDEN",
+      "backend_name": "VISHNU GARDEN"
+    },
+    "D134": {
+      "geo_no": "142",
+      "geo_name": "RAJ NAGAR",
+      "backend_name": "RAJ NAGAR"
+    }
+  },
+  "matched_count": 136,
+  "unmatched_geo": [
+    {
+      "ward_no": "81",
+      "ward_name": "MINTO ROAD"
+    },
+    {
+      "ward_no": "82",
+      "ward_name": "KUCHA PANDIT"
+    },
+    {
+      "ward_no": "83",
+      "ward_name": "BAZAR SITARAM"
+    },
+    {
+      "ward_no": "85",
+      "ward_name": "IDGAH ROAD"
+    },
+    {
+      "ward_no": "109",
+      "ward_name": "JANAK PURI NORTH"
+    },
+    {
+      "ward_no": "119",
+      "ward_name": "MILAP NAGAR"
+    },
+    {
+      "ward_no": "120",
+      "ward_name": "SITA PURI"
+    },
+    {
+      "ward_no": "133",
+      "ward_name": "CHHAWLA"
+    },
+    {
+      "ward_no": "134",
+      "ward_name": "NANGLI SAKRAVATI"
+    },
+    {
+      "ward_no": "135",
+      "ward_name": "KAKRAULA"
+    },
+    {
+      "ward_no": "140",
+      "ward_name": "KHERA"
+    },
+    {
+      "ward_no": "242",
+      "ward_name": "NEW SEEMA PURI"
+    },
+    {
+      "ward_no": "244",
+      "ward_name": "SUNDER NAGARI"
+    },
+    {
+      "ward_no": "245",
+      "ward_name": "DURGA PURI"
+    },
+    {
+      "ward_no": "250",
+      "ward_name": "ZAFFRABAD"
+    },
+    {
+      "ward_no": "259",
+      "ward_name": "JANTA COLONY"
+    },
+    {
+      "ward_no": "260",
+      "ward_name": "BABAR PUR"
+    },
+    {
+      "ward_no": "261",
+      "ward_name": "JIWANPUR"
+    },
+    {
+      "ward_no": "262",
+      "ward_name": "GOKALPUR"
+    },
+    {
+      "ward_no": "265",
+      "ward_name": "SHIV VIHAR"
+    },
+    {
+      "ward_no": "266",
+      "ward_name": "KARAWAL NAGAR EAST"
+    },
+    {
+      "ward_no": "269",
+      "ward_name": "KHAJOORI KHAS"
+    },
+    {
+      "ward_no": "271",
+      "ward_name": "KARAWAL NAGAR WEST"
+    },
+    {
+      "ward_no": "154",
+      "ward_name": "NIZAMUDDIN"
+    },
+    {
+      "ward_no": "156",
+      "ward_name": "BHOGAL"
+    },
+    {
+      "ward_no": "157",
+      "ward_name": "KASTURBA NAGAR"
+    },
+    {
+      "ward_no": "162",
+      "ward_name": "HAUZ RANI"
+    },
+    {
+      "ward_no": "159",
+      "ward_name": "ANDREWSGANJ"
+    },
+    {
+      "ward_no": "168",
+      "ward_name": "NANAK PURA"
+    },
+    {
+      "ward_no": "171",
+      "ward_name": "VASANTKUNJ"
+    },
+    {
+      "ward_no": "180",
+      "ward_name": "DAKSHINPURI EXT."
+    },
+    {
+      "ward_no": "182",
+      "ward_name": "AMBEDKAR NAGAR"
+    },
+    {
+      "ward_no": "185",
+      "ward_name": "TUGHLAKABAD EXTN"
+    },
+    {
+      "ward_no": "187",
+      "ward_name": "SANGAM VIHAR CENTRAL"
+    },
+    {
+      "ward_no": "188",
+      "ward_name": "SANGAM VIHAR EAST"
+    },
+    {
+      "ward_no": "190",
+      "ward_name": "CHITRANJAN PARK"
+    },
+    {
+      "ward_no": "191",
+      "ward_name": "SHAPUR JAT"
+    },
+    {
+      "ward_no": "192",
+      "ward_name": "GREATER KAILASH-I"
+    },
+    {
+      "ward_no": "193",
+      "ward_name": "SRI NIWASPURI"
+    },
+    {
+      "ward_no": "194",
+      "ward_name": "EAST OF KAILASH"
+    },
+    {
+      "ward_no": "198",
+      "ward_name": "PUL PEHLAD"
+    },
+    {
+      "ward_no": "199",
+      "ward_name": "TEKHAND"
+    },
+    {
+      "ward_no": "202",
+      "ward_name": "MEETHEYPUR"
+    },
+    {
+      "ward_no": "203",
+      "ward_name": "BADAR PUR"
+    },
+    {
+      "ward_no": "206",
+      "ward_name": "OKHLA"
+    },
+    {
+      "ward_no": "84",
+      "ward_name": "TURKMAN GATE"
+    },
+    {
+      "ward_no": "88",
+      "ward_name": "QASABPURA"
+    },
+    {
+      "ward_no": "150",
+      "ward_name": "PUSA"
+    },
+    {
+      "ward_no": "207",
+      "ward_name": "MADANPUR KHADAR"
+    },
+    {
+      "ward_no": "231",
+      "ward_name": "GHONDLI"
+    },
+    {
+      "ward_no": "236",
+      "ward_name": "RAGHUBAR PURA"
+    },
+    {
+      "ward_no": "239",
+      "ward_name": "VIVEK VIHAR"
+    },
+    {
+      "ward_no": "96",
+      "ward_name": "NEW RANJIT NAGAR"
+    },
+    {
+      "ward_no": "97",
+      "ward_name": "KIRTI NAGAR"
+    },
+    {
+      "ward_no": "98",
+      "ward_name": "MANSAROWER GARDEN"
+    },
+    {
+      "ward_no": "74",
+      "ward_name": "INDER LOK COLONY"
+    },
+    {
+      "ward_no": "76",
+      "ward_name": "DEPUTY GANJ"
+    },
+    {
+      "ward_no": "77",
+      "ward_name": "KASHMERE GATE"
+    },
+    {
+      "ward_no": "78",
+      "ward_name": "MAJNU KA TILA"
+    },
+    {
+      "ward_no": "115",
+      "ward_name": "MAJOR BHUPINDAR SINGH NAGAR"
+    },
+    {
+      "ward_no": "116",
+      "ward_name": "VIKASPURI EAST"
+    },
+    {
+      "ward_no": "128",
+      "ward_name": "BINDAPUR"
+    },
+    {
+      "ward_no": "137",
+      "ward_name": "ROSHANPURA"
+    },
+    {
+      "ward_no": "21",
+      "ward_name": "ROHINI"
+    },
+    {
+      "ward_no": "210",
+      "ward_name": "DALLOPURA"
+    },
+    {
+      "ward_no": "211",
+      "ward_name": "TRILOK PURI"
+    },
+    {
+      "ward_no": "213",
+      "ward_name": "KALYAN PURI"
+    },
+    {
+      "ward_no": "214",
+      "ward_name": "KHICHRIPUR"
+    },
+    {
+      "ward_no": "67",
+      "ward_name": "WAJIRPUR"
+    },
+    {
+      "ward_no": "66",
+      "ward_name": "SAWAN PARK"
+    },
+    {
+      "ward_no": "65",
+      "ward_name": "NIMRI COLONY"
+    },
+    {
+      "ward_no": "62",
+      "ward_name": "RAMPURA"
+    },
+    {
+      "ward_no": "58",
+      "ward_name": "PASCHIM VIHAR NORTH"
+    },
+    {
+      "ward_no": "57",
+      "ward_name": "PASCHIM VIHAR SOUTH"
+    },
+    {
+      "ward_no": "56",
+      "ward_name": "SHALIMAR BAGH SOUTH"
+    },
+    {
+      "ward_no": "55",
+      "ward_name": "SHALIMAR BAGH NORTH"
+    },
+    {
+      "ward_no": "54",
+      "ward_name": "PITAMPUR NORTH"
+    },
+    {
+      "ward_no": "53",
+      "ward_name": "PITAMPURA SOUTH"
+    },
+    {
+      "ward_no": "52",
+      "ward_name": "NAHARPUR"
+    },
+    {
+      "ward_no": "51",
+      "ward_name": "ROHINI EAST"
+    },
+    {
+      "ward_no": "50",
+      "ward_name": "ROHINI CENTRAL"
+    },
+    {
+      "ward_no": "48",
+      "ward_name": "MANGOLPURI  WEST"
+    },
+    {
+      "ward_no": "46",
+      "ward_name": "MANGOLPURI  EAST"
+    },
+    {
+      "ward_no": "45",
+      "ward_name": "ROHINI SOUTH"
+    },
+    {
+      "ward_no": "44",
+      "ward_name": "QUAMMRUDDIN NAGAR"
+    },
+    {
+      "ward_no": "43",
+      "ward_name": "NANGLOI EAST"
+    },
+    {
+      "ward_no": "42",
+      "ward_name": "PERAGHARHI"
+    },
+    {
+      "ward_no": "40",
+      "ward_name": "SULTANPURI  SOUTH"
+    },
+    {
+      "ward_no": "37",
+      "ward_name": "SULTANPURI  EAST"
+    },
+    {
+      "ward_no": "35",
+      "ward_name": "KIRARI SULEMAN NAGAR"
+    },
+    {
+      "ward_no": "29",
+      "ward_name": "KARALA"
+    },
+    {
+      "ward_no": "229",
+      "ward_name": "KRISHNA  NAGAR"
+    },
+    {
+      "ward_no": "227",
+      "ward_name": "I.P EXTENTION"
+    },
+    {
+      "ward_no": "219",
+      "ward_name": "MAYUR VIHAR PHASE II"
+    },
+    {
+      "ward_no": "132",
+      "ward_name": "SAGARPUR WEST"
+    },
+    {
+      "ward_no": "30",
+      "ward_name": "MUNDAKA"
+    },
+    {
+      "ward_no": "90",
+      "ward_name": "MODEL BASTI"
+    },
+    {
+      "ward_no": "70",
+      "ward_name": "RANA PRATAP BAGH"
+    },
+    {
+      "ward_no": "4",
+      "ward_name": "BAKHTAWAR PUR"
+    },
+    {
+      "ward_no": "26",
+      "ward_name": "SAHIBABAD DAULAT PUR"
+    },
+    {
+      "ward_no": "9",
+      "ward_name": "MALKAGANJ"
+    },
+    {
+      "ward_no": "6",
+      "ward_name": "MUKUND PUR"
+    },
+    {
+      "ward_no": "16",
+      "ward_name": "JAHANGIRPURI-I"
+    },
+    {
+      "ward_no": "15",
+      "ward_name": "SARAI PIPAL THALA"
+    },
+    {
+      "ward_no": "14",
+      "ward_name": "ADARASH  NAGAR"
+    },
+    {
+      "ward_no": "13",
+      "ward_name": "DHIR PUR"
+    },
+    {
+      "ward_no": "12",
+      "ward_name": "G.T.B. NAGAR"
+    },
+    {
+      "ward_no": "10",
+      "ward_name": "TIMAR PUR"
+    },
+    {
+      "ward_no": "101",
+      "ward_name": "RAJA GARDEN"
+    },
+    {
+      "ward_no": "110",
+      "ward_name": "NANGAL RAYA"
+    },
+    {
+      "ward_no": "31",
+      "ward_name": "NANGLOI JAT WEST"
+    },
+    {
+      "ward_no": "39",
+      "ward_name": "SULTANPUR MAJRA"
+    },
+    {
+      "ward_no": "49",
+      "ward_name": "ROHINI NORTH"
+    },
+    {
+      "ward_no": "18",
+      "ward_name": "LIBAS PUR"
+    },
+    {
+      "ward_no": "47",
+      "ward_name": "MANGOLPURI"
+    },
+    {
+      "ward_no": "172",
+      "ward_name": "KISHANGARH"
+    },
+    {
+      "ward_no": "226",
+      "ward_name": "VISHWASH NAGAR"
+    },
+    {
+      "ward_no": "149",
+      "ward_name": "RAJENDER NAGAR"
+    },
+    {
+      "ward_no": "167",
+      "ward_name": "R. K. PURAM"
+    },
+    {
+      "ward_no": "163",
+      "ward_name": "SAFDARJANG ENCLAVE"
+    },
+    {
+      "ward_no": "38",
+      "ward_name": "MANGOL PURI  NORTH"
+    },
+    {
+      "ward_no": "106",
+      "ward_name": "TAGORE GARDEN"
+    },
+    {
+      "ward_no": "169",
+      "ward_name": "LADOSARAI"
+    },
+    {
+      "ward_no": "5",
+      "ward_name": "BHALASWA JAHAGIR PUR"
+    },
+    {
+      "ward_no": "220",
+      "ward_name": "PATPARGANJ"
+    },
+    {
+      "ward_no": "221",
+      "ward_name": "KISHAN KUNJ"
+    },
+    {
+      "ward_no": "233",
+      "ward_name": "DHARAMPURA"
+    },
+    {
+      "ward_no": "251",
+      "ward_name": "NEW USMANPUR"
+    },
+    {
+      "ward_no": "177",
+      "ward_name": "SAID UL AJAIB"
+    },
+    {
+      "ward_no": "178",
+      "ward_name": "SANGAM VIHAR"
+    },
+    {
+      "ward_no": "186",
+      "ward_name": "SANGAM VIHAR WEST"
+    },
+    {
+      "ward_no": "20",
+      "ward_name": "JAHANGIR PURI -II"
+    },
+    {
+      "ward_no": "113",
+      "ward_name": "MAHAVIR NAGAR"
+    },
+    {
+      "ward_no": "93",
+      "ward_name": "BALJIT NAGAR"
+    },
+    {
+      "ward_no": "36",
+      "ward_name": "PRATAP VIHAR"
+    },
+    {
+      "ward_no": "270",
+      "ward_name": "TUKHMIR PUR"
+    }
+  ],
+  "special_wards": [
+    {
+      "ward_no": "CANT_1",
+      "ward_name": "DELHI CANTT CHARGE 1"
+    },
+    {
+      "ward_no": "CANT_2",
+      "ward_name": "DELHI CANTT CHARGE 2"
+    },
+    {
+      "ward_no": "CANT_4",
+      "ward_name": "DELHI CANTT CHARGE 4"
+    },
+    {
+      "ward_no": "CANT_5",
+      "ward_name": "DELHI CANTT CHARGE 5"
+    },
+    {
+      "ward_no": "CANT_6",
+      "ward_name": "DELHI CANTT CHARGE 6"
+    },
+    {
+      "ward_no": "CANT_7",
+      "ward_name": "DELHI CANTT CHARGE 7"
+    },
+    {
+      "ward_no": "CANT_8",
+      "ward_name": "DELHI CANTT CHARGE 8"
+    },
+    {
+      "ward_no": "CANT_3",
+      "ward_name": "DELHI CANTT CHARGE 3"
+    },
+    {
+      "ward_no": "NDMC_1",
+      "ward_name": "NDMC CHARGE 1"
+    },
+    {
+      "ward_no": "NDMC_2",
+      "ward_name": "NDMC CHARGE 2"
+    },
+    {
+      "ward_no": "NDMC_3",
+      "ward_name": "NDMC CHARGE 3"
+    },
+    {
+      "ward_no": "NDMC_4",
+      "ward_name": "NDMC CHARGE 4"
+    },
+    {
+      "ward_no": "NDMC_5",
+      "ward_name": "NDMC CHARGE 5"
+    },
+    {
+      "ward_no": "NDMC_7",
+      "ward_name": "NDMC CHARGE 7"
+    },
+    {
+      "ward_no": "NDMC_8",
+      "ward_name": "NDMC CHARGE 8"
+    },
+    {
+      "ward_no": "NDMC_9",
+      "ward_name": "NDMC CHARGE 9"
+    },
+    {
+      "ward_no": "NDMC_6",
+      "ward_name": "NDMC CHARGE 6"
+    },
+    {
+      "ward_no": null,
+      "ward_name": null
+    }
+  ]
+}
