@@ -103,6 +103,23 @@ It is fully scalable with real-time government and municipal datasets.
 
 ---
 
+## Frontend Setup
+
+- **Navigate to frontend directory:** cd frontend
+- **Install dependencies:** npm install
+- **Start development server:** npm run dev
+- **Open in browser:** http://localhost:5173
+
+---
+
+## Backend Setup
+
+- **Navigate to backend directory:** cd backend
+- **Start the API server:** python -m uvicorn risk_engine.api:app --reload
+- **Backend runs at: http:** http://localhost:8000/risk-data
+
+---
+
 ## 📌 Use Cases
 
 - Municipal corporations for monsoon preparedness planning
