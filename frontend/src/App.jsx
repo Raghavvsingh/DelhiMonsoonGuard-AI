@@ -9,6 +9,8 @@ import { fetchRiskData } from './services/riskServices' // ✅ NEW
 function App() {
   const [mode, setMode] = useState('authority');
   const [selectedWard, setSelectedWard] = useState(null);
+  const [alertLog, setAlertLog] = useState([]);//RS
+
 
   // ✅ NEW: backend data state
   const [wards, setWards] = useState([]);
